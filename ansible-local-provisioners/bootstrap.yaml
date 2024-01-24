@@ -8,7 +8,7 @@
   tasks:
   - name: Add open5gs latest repository from PPA and install its signing key on Ubuntu target
     ansible.builtin.apt_repository:
-      repo: ppa:open5gs/latest
+      repo: ppa:open5gs/v2.7.0
       update_cache: yes
   - name: Upgrade the OS (apt-get upgrade)
     apt:
